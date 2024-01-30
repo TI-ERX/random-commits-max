@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 _() {
-  YEAR="2023"
+  YEAR="2024"
   echo "GitHub Username: "
   read -r USERNAME
   echo "GitHub Access token: "
@@ -31,7 +31,7 @@ _() {
         fi
 
         # Gera aleatoriamente o número de commits para cada dia (entre 1 e 20, ajuste conforme necessário)
-        COMMITS_PER_DAY=$(shuf -i 1-20 -n 1)
+        COMMITS_PER_DAY=$(shuf -i 1-50 -n 1)
 
         for ((i = 1; i <= COMMITS_PER_DAY; i++))
         do
